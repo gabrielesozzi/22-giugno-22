@@ -6,18 +6,18 @@ const newNumbers = [10, 1, 2, 5, 6];
 // Consegna
 // forEach
 // Eseguire console.log() di ogni elemento di array
-function logItems(item) {
+const logItems = (item) => {
   console.log(`Item: ${item}`);
-}
+};
 numbers.forEach(logItems);
 
 // Consegna
 // filter
 // Tenere dentro l'array solo i numeri pari.
 // risultato: [2,4,6,8]
-function oddNumbers(el) {
+const oddNumbers = (el) => {
   return el % 2 === 0;
-}
+};
 console.log(
   "L'array filtrato che contiene solo i numeri pari:",
   numbers.filter(oddNumbers)
@@ -26,9 +26,11 @@ console.log(
 // Consegna
 // Tenere solo i numeri in comune con questo array: [10, 1, 2, 5, 6], , usare utility come Array.includes oppure Array.indexOf.
 // risultato: [1,2,5,6]
-function numbersInCommon(el) {
-  if (numbers.includes(el)) return el;
-}
+const numbersInCommon = (el) => {
+  if (numbers.includes(el)) {
+    return el;
+  }
+};
 
 console.log(
   "Ecco l'array dei numeri in comune:",
@@ -42,7 +44,7 @@ console.log(
 //            dopo 2s: console.log(3)
 
 // CON FOR EACH
-function logNumberWithDelay() {
+const logNumberWithDelay = () => {
   let timer = 0;
 
   numbers.forEach((element) => {
@@ -55,13 +57,13 @@ function logNumberWithDelay() {
 
     timer = timer + 1000;
   });
-}
+};
 
 logNumberWithDelay();
 
 // ALTERNATIVA CON FOR 'CLASSICO'
 
-// function logNumberInSecond() {
+// const logNumberInSecond = () => {
 //   let timer = 0;
 
 //   for (let i = 0; i < numbers.length; i++) {
@@ -71,6 +73,6 @@ logNumberWithDelay();
 
 //     timer = timer + 1000;
 //   }
-// }
+// };
 
 // logNumberInSecond();

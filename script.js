@@ -27,9 +27,7 @@ console.log(
 // Tenere solo i numeri in comune con questo array: [10, 1, 2, 5, 6], , usare utility come Array.includes oppure Array.indexOf.
 // risultato: [1,2,5,6]
 const numbersInCommon = (el) => {
-  if (numbers.includes(el)) {
-    return el;
-  }
+  if (numbers.includes(el)) return el;
 };
 
 console.log(
@@ -55,7 +53,7 @@ const logNumberWithDelay = () => {
       );
     }, timer);
 
-    timer = timer + 1000;
+    timer = timer + 1000 * (index + 1);
   });
 };
 

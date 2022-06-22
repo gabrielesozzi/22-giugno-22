@@ -47,10 +47,10 @@ console.log(
 const logNumberWithDelay = () => {
   let timer = 0;
 
-  numbers.forEach((element) => {
+  numbers.forEach((element, index) => {
     setTimeout(() => {
       console.log(
-        `Dopo ${element - 1} secondi stampo in console:`,
+        `Dopo ${index} secondi stampo in console:`,
         numbers[element - 1]
       );
     }, timer);
